@@ -1,6 +1,6 @@
 <?php  
-	include 'includes/head.html';
-	include 'includes/nav.php';  
+	include '../includes/head.html';
+	include '../includes/nav.php';  
 ?>
 
     <main class="container">
@@ -9,5 +9,5 @@
     </main>
 
 <?php  
-    include 'includes/footer.php';
+    include '../includes/footer.php';
 ?>

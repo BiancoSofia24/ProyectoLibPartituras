@@ -1,7 +1,7 @@
 
 <footer class="footer">
     <div class="container">
-        <span class="text-muted">&copy; SB <?php  echo date('Y');  ?>. Buenos Aires, Argentina.</span>
+        <span class="text-muted">&copy; Sofia Bianco <?php  echo date('Y');  ?>. Buenos Aires, Argentina.</span>
     </div>
 </footer>
 

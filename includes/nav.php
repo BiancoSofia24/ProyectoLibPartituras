@@ -1,16 +1,16 @@
 <nav class="nav-menu sticky-top py-2">
     <div class="container d-flex flex-row flex-md-row justify-content-between">
-        <a class="py-2" href="#">Home</a>
+        <a class="py-2" href="#">Inicio</a>
 
-        <a class="py-2" href="#">Services</a>
+        <a class="py-2" href="#">Servicios</a>
 
-        <a class="py-2" href="#">About</a>
+        <a class="py-2" href="#">Acerca de</a>
 
-        <a class="py-2" href="#">User</a>
+        <a class="py-2" href="#">Usuarios</a>
 
         <button class="btn btn-dark">
             <a href="#">
-                <i class="fas fa-sign-in-alt mr-2"></i> Login
+                <i class="fas fa-sign-in-alt mr-2"></i> Ingresar
             </a>
         </button>
         
