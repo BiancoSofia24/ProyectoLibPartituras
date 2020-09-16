@@ -39,6 +39,7 @@
 
             <form action="eliminarCatg.php" method="post">
                 <button class="btn btn-danger">
+                    <i class="far fa-trash-alt"></i>
                     Confirmar
                 </button>
 

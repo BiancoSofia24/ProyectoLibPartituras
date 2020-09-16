@@ -13,6 +13,7 @@
                 <input type="text" name="catgNombre" class="form-control mb-3" required>
 
                 <button class="btn btn-success">
+                    <i class="fas fa-plus-circle"></i>
                     Agregar
                 </button>
 

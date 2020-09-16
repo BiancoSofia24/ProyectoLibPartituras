@@ -20,6 +20,7 @@
                 <input type="text" name="catgNombre" value="<?= $categoria['catgNombre']; ?>" class="form-control mb-3" required>
 
                 <button class="btn btn-primary">
+                    <i class="far fa-edit"></i>
                     Editar
                 </button>
 
