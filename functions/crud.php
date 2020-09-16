@@ -86,4 +86,26 @@
                 or die(mysqli_error($link));
         return $result;
     }
+
+    #######################
+    ### CRUD PARTITURAS ###
+    #######################
+
+    /**
+     * @return boil|mysqli_result
+     */
+    function listarPart() {
+        $link = conectar();
+        $sql = "SELECT  idPartitura,
+                        partNombre,
+                        partAutor,
+                        p.idCategoria, catgNombre,
+                        partArchivo
+                FROM partituras p, categorias c
+                WHERE c.idCategoria = p.idCategoria";
+        
+        $result = mysqli_query($link, $sql)
+                or die(mysqli_error($link));
+        return $result;
+    }
 ?>

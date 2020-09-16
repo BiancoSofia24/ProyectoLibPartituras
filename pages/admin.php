@@ -16,7 +16,7 @@
                 Autores
             </a>
 
-            <a href="#" class="list-group-item list-group-item-action">
+            <a href="adminPartituras.php" class="list-group-item list-group-item-action">
                 Partituras
             </a>
 
