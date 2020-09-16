@@ -108,4 +108,43 @@
                 or die(mysqli_error($link));
         return $result;
     }
+
+    function subirArchivo() {
+        $url = '../files/';
+        $partArchivo = 'no-disponible.jpg';
+
+        if (isset($_POST['archivoPrevio'])) {
+            $partArchivo = $_POST['archivoPrevio'];
+        }
+
+        if ($_FILES['partArchivo']['error'] == 0) {
+            $partArchivo = $_FILES['partArchivo']['name'];
+            $temporal = $_FILES['partArchivo']['tmp_name'];
+
+            move_uploaded_file($temporal, $url.
+            $partArchivo);
+        }
+
+        return $partArchivo;
+    }
+
+    function agregarPart() {
+        $partNombre = $_POST['partNombre'];
+        $partAutor = $_POST['partAutor'];
+        $partNombre = $_POST['partNombre'];
+        $partArchivo = subirArchivo();
+
+        $link = conectar();
+        $sql = "INSERT INTO partituras
+                VALUES
+                (DEFAULT,
+                '".$partNombre."',
+                '".$partAutor."',
+                ".$idCategoria.",
+                '".$partArchivo."')";
+        
+        $result = mysqli_query($link, $sql)
+                or die(mysqli_error($link));
+        return $result;
+    }
 ?>

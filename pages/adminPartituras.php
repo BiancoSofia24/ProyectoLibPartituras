@@ -24,7 +24,7 @@
                     <th>Categoría</th>
                     <th>Archivo</th>
                     <th colspan="2">
-                        <a href="#" class="btn btn-outline-success btn-sm">
+                        <a href="../forms/formAgregarPart.php" class="btn btn-outline-success btn-sm">
                             <i class="fas fa-plus-circle"></i>
                             Nueva partitura
                         </a>
