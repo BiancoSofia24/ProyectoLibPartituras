@@ -39,13 +39,13 @@
                         </a>
                     </td>
                     <td>
-                        <a href="#" class="btn btn-outline-primary btn-sm">
+                        <a href="../forms/formEditarCatg.php?idCategoria=<?= $categoria['idCategoria']; ?>" class="btn btn-outline-primary btn-sm">
                             <i class="far fa-edit"></i>
                             Editar
                         </a>
                     </td>
                     <td>
-                    <a href="#" class="btn btn-outline-danger btn-sm">
+                    <a href="../forms/formEliminarCatg.php?idCategoria=<?= $categoria['idCategoria']; ?>" class="btn btn-outline-danger btn-sm">
                             <i class="far fa-trash-alt"></i>
                             Eliminar
                         </a>

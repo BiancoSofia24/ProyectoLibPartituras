@@ -49,7 +49,7 @@
     }
 
     function agregarCatg() {
-        $catgNombre = $_GET['catgNombre'];
+        $catgNombre = $_POST['catgNombre'];
 
         $link = conectar();
         $sql = "INSERT INTO categorias
@@ -62,8 +62,8 @@
     }
 
     function editarCatg() {
-        $idCategoria = $_GET['idCategoria'];
-        $catgNombre = $_GET['catgNombre'];
+        $idCategoria = $_POST['idCategoria'];
+        $catgNombre = $_POST['catgNombre'];
 
         $link = conectar();
         $sql = "UPDATE categorias
@@ -76,7 +76,7 @@
     }
 
     function eliminarCatg() {
-        $idCategoria = $_GET['idCategoria'];
+        $idCategoria = $_POST['idCategoria'];
 
         $link = conectar();
         $sql = "DELETE FROM categorias

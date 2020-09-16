@@ -7,13 +7,13 @@
         <h1>Nueva Categoría</h1>
 
         <div class="alert alert-success col-6 m-auto">
-            <form action="#" method="post">
+            <form action="agregarCatg.php" method="post">
                 Categoría:
                 <!-- Nombre -->
-                <input type="text" class="form-control mb-3" required>
+                <input type="text" name="catgNombre" class="form-control mb-3" required>
 
                 <button class="btn btn-success">
-                    Agregar Categoría
+                    Agregar
                 </button>
 
                 <a href="../pages/adminCategorias.php" class="btn btn-outline-dark btn-sm">
