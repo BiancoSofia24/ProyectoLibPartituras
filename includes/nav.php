@@ -2,7 +2,7 @@
     <div class="container d-flex flex-row flex-md-row justify-content-between">
         <a class="py-2" href="#">Inicio</a>
 
-        <a class="py-2" href="#">Servicios</a>
+        <a class="py-2" href="../pages/admin.php">Secciones</a>
 
         <a class="py-2" href="#">Acerca de</a>
 

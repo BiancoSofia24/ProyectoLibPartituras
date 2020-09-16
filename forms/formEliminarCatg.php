@@ -14,7 +14,7 @@
 ?>
 
     <main class="container">
-        <h1>Eliminar una Categoría</h1>
+        <h1 class="text-center">Eliminar una Categoría</h1>
 
         <?php
             if ($cant > 0) {

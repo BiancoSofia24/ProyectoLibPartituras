@@ -11,7 +11,7 @@
 ?>
 
     <main class="container">
-        <h1>Editar una Categoría</h1>
+        <h1 class="text-center">Editar una Categoría</h1>
 
         <div class="alert alert-primary col-6 m-auto">
             <form action="editarCatg.php" method="post">

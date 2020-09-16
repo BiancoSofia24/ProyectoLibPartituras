@@ -4,7 +4,7 @@
 ?>
 
     <main class="container">
-        <h1>Tablero</h1>
+        <h1 class="text-center">Secciones</h1>
 
         <div class="list-group col-6 m-auto">
 

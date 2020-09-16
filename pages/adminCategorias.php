@@ -10,10 +10,10 @@
 ?>
 
     <main class="container">
-        <h1>Categorías</h1>
+        <h1 class="text-center">Categorías</h1>
 
         <a href="admin.php" class="btn btn-outline-dark btn-sm mb-3">
-            Ir al tablero
+            Ir a Secciones
         </a>
 
         <table class="table table-bordered table-striped table-hover">
@@ -58,7 +58,7 @@
         </table>
 
         <a href="admin.php" class="btn btn-outline-dark btn-sm mb-3">
-            Ir al tablero
+            Ir a Secciones
         </a>
     </main>
 

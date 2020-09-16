@@ -4,7 +4,7 @@
 ?>
 
     <main class="container">
-        <h1>Nueva Categoría</h1>
+        <h1 class="text-center">Nueva Categoría</h1>
 
         <div class="alert alert-success col-6 m-auto">
             <form action="agregarCatg.php" method="post">

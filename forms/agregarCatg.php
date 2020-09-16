@@ -10,7 +10,7 @@
 ?>
 
     <main class="container">
-        <h1>Nueva Categoría</h1>
+        <h1 class="text-center">Nueva Categoría</h1>
 
         <a href="../pages/adminCategorias.php" class="btn btn-outline-dark btn-sm mb-3">
             Volver a Categorías

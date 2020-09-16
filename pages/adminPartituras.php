@@ -10,7 +10,7 @@
 ?>
 
     <main class="container">
-        <h1>Partituras</h1>
+        <h1 class="text-center">Partituras</h1>
 
         <a href="admin.php" class="btn btn-outline-dark btn-sm mb-3">
             Ir al tablero
@@ -83,7 +83,7 @@
         </table>
 
         <a href="admin.php" class="btn btn-outline-dark btn-sm mb-3">
-            Ir al tablero
+            Ir a Secciones
         </a>
     </main>
 
