@@ -33,7 +33,7 @@
         return $categoria;
     }
 
-    function partituraPorCatg() {
+    function cantPartPorCatg() {
         $idCategoria = $_GET['idCategoria'];
 
         $link = conectar();
@@ -197,5 +197,39 @@
                 or die(mysqli_error($link));
         $partitura = mysqli_fetch_assoc($result);
         return $partitura;
+    }
+
+    function partPorCatg() {
+        $idCategoria = $_GET['idCategoria'];
+
+        $link = conectar();
+        $sql = "SELECT  idPartitura,
+                        partNombre,
+                        partAutor,
+                        p.idCategoria, catgNombre,
+                        partArchivo
+                FROM partituras p, categorias c
+                WHERE c.idCategoria = p.idCategoria
+                AND p.idCategoria = ".$idCategoria;
+        
+        $result = mysqli_query($link, $sql)
+                or die(mysqli_erro($link));
+        return $result;
+    }
+
+    function autorPorCatg() {
+        $idCategoria = $_GET['idCategoria'],
+
+        $link = conectar();
+        $sql = "SELECT  partAutor,
+                        p.idCategoria
+                FROM partituras p, categorias c
+                WHERE c.idCategoria = p.idCategoria
+                AND p.idCategoria = ".$idCategoria;
+        
+        $result = mysqli_query($link, $sql)
+                or die(mysqli_error($link));
+        $autor = mysqli_fetch_assoc($result);
+        return $autor;
     }
 ?>

@@ -3,7 +3,7 @@
     require '../functions/conexion.php';
     require '../functions/crud.php';
 
-    $cant = partituraPorCatg();
+    $cant = cantPartPorCatg();
 
     if ($cant == 0) {
         $categoria = catgPorId();
