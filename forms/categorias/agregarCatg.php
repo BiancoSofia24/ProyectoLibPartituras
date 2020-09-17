@@ -1,18 +1,18 @@
 <?php  
 
-    require '../functions/conexion.php';
-    require '../functions/crud.php';
+    require '../../functions/conexion.php';
+    require '../../functions/crud.php';
 
     $ok = agregarCatg();
 
-	include '../includes/head.html';
-	include '../includes/nav.php';  
+	include '../includesForms/head.html';
+	include '../includesForms/nav.php';  
 ?>
 
     <main class="container">
         <h1 class="text-center">Nueva Categoría</h1>
 
-        <a href="../pages/adminCategorias.php" class="btn btn-outline-dark btn-sm mb-3">
+        <a href="../../pages/adminCategorias.php" class="btn btn-outline-dark btn-sm mb-3">
             Volver a Categorías
         </a>
 
@@ -33,5 +33,5 @@
     </main>
 
 <?php  
-    include '../includes/footer.php';
+    include '../includesForms/footer.php';
 ?>

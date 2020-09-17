@@ -1,12 +1,12 @@
 <?php  
 
-    require '../functions/conexion.php';
-    require '../functions/crud.php';
+    require '../../functions/conexion.php';
+    require '../../functions/crud.php';
 
     $categorias = listarCatg();
 
-	include '../includes/head.html';
-	include '../includes/nav.php';  
+	include '../includesForms/head.html';
+	include '../includesForms/nav.php';  
 ?>
 
     <main class="container">
@@ -52,7 +52,7 @@
                     Agregar
                 </button>
 
-                <a href="../pages/adminPartituras.php" class="btn btn-outline-dark btn-sm">
+                <a href="../../pages/adminPartituras.php" class="btn btn-outline-dark btn-sm">
                     Volver a Partituras
                 </a>
             </form>
@@ -61,5 +61,5 @@
     </main>
 
 <?php  
-    include '../includes/footer.php';
+    include '../includesForms/footer.php';
 ?>

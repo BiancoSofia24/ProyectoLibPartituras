@@ -1,13 +1,13 @@
 <?php  
 
-    require '../functions/conexion.php';
-    require '../functions/crud.php';
+    require '../../functions/conexion.php';
+    require '../../functions/crud.php';
 
     $categorias = listarCatg();
     $partitura = partPorId();
 
-	include '../includes/head.html';
-	include '../includes/nav.php';  
+	include '../includesForms/head.html';
+	include '../includesForms/nav.php';  
 ?>
 
     <main class="container">
@@ -56,7 +56,7 @@
                     Editar 
                 </button>
 
-                <a href="../pages/adminPartituras.php" class="btn btn-outline-dark btn-sm">
+                <a href="../../pages/adminPartituras.php" class="btn btn-outline-dark btn-sm">
                     Volver a Partituras
                 </a>
 
@@ -68,5 +68,5 @@
     </main>
 
 <?php  
-    include '../includes/footer.php';
+    include '../includesForms/footer.php';
 ?>

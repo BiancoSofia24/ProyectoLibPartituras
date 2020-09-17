@@ -1,7 +1,7 @@
 <?php  
 
-    require '../functions/conexion.php';
-    require '../functions/crud.php';
+    require '../../functions/conexion.php';
+    require '../../functions/crud.php';
 
     $cant = cantPartPorCatg();
 
@@ -9,8 +9,8 @@
         $categoria = catgPorId();
     }
 
-    include '../includes/head.html';
-	include '../includes/nav.php';  
+    include '../includesForms/head.html';
+	include '../includesForms/nav.php';  
 ?>
 
     <main class="container">
@@ -23,7 +23,7 @@
         <div class="alert alert-danger col-6 m-auto">
             <p>La categoría selecciona <strong>no puede ser eliminada</strong>  ya que tiene partituras relacionadas.</p>
 
-            <a href="../pages/adminCategorias.php" class="btn btn-outline-dark btn-sm mb-3 mt-3">
+            <a href="../../pages/adminCategorias.php" class="btn btn-outline-dark btn-sm mb-3 mt-3">
                 Volver a Categorías
             </a>
         </div>
@@ -43,7 +43,7 @@
                     Confirmar
                 </button>
 
-                <a href="../pages/adminCategorias.php" class="btn btn-outline-dark btn-sm">
+                <a href="../../pages/adminCategorias.php" class="btn btn-outline-dark btn-sm">
                     Volver a Categorías
                 </a>
 
@@ -51,7 +51,7 @@
             </form>
         </div>
 
-        <script src="../js/alertCatg.js"></script>
+        <script src="../../js/alertCatg.js"></script>
 
         <?php
             };
@@ -59,5 +59,5 @@
     </main>
 
 <?php  
-    include '../includes/footer.php';
+    include '../includesForms/footer.php';
 ?>

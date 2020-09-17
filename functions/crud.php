@@ -232,4 +232,10 @@
         $autor = mysqli_fetch_assoc($result);
         return $autor;
     }
+
+    #####################
+    ### CRUD USUARIOS ###
+    #####################
+
+    
 ?>

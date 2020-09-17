@@ -1,6 +1,6 @@
 <?php  
-	include '../includes/head.html';
-	include '../includes/nav.php';  
+	include '../includesForms/head.html';
+	include '../includesForms/nav.php';  
 ?>
 
     <main class="container">
@@ -17,7 +17,7 @@
                     Agregar
                 </button>
 
-                <a href="../pages/adminCategorias.php" class="btn btn-outline-dark btn-sm">
+                <a href="../../pages/adminCategorias.php" class="btn btn-outline-dark btn-sm">
                     Volver a Categorías
                 </a>
             </form>
@@ -26,5 +26,5 @@
     </main>
 
 <?php  
-    include '../includes/footer.php';
+    include '../includesForms/footer.php';
 ?>

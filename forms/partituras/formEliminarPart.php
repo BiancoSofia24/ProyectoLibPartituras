@@ -1,12 +1,12 @@
 <?php  
 
-    require '../functions/conexion.php';
-    require '../functions/crud.php';
+    require '../../functions/conexion.php';
+    require '../../functions/crud.php';
 
     $partitura = partPorId();
 
-    include '../includes/head.html';
-	include '../includes/nav.php';  
+    include '../includesForms/head.html';
+	include '../includesForms/nav.php';  
 ?>
 
     <main class="container">
@@ -26,7 +26,7 @@
                     Confirmar
                 </button>
 
-                <a href="../pages/adminPartituras.php" class="btn btn-outline-dark btn-sm">
+                <a href="../../pages/adminPartituras.php" class="btn btn-outline-dark btn-sm">
                     Volver a Partituras
                 </a>
 
@@ -34,9 +34,9 @@
             </form>
         </div>
 
-        <script src="../js/alertPart.js"></script>
+        <script src="../../js/alertPart.js"></script>
     </main>
 
 <?php  
-    include '../includes/footer.php';
+    include '../includesForms/footer.php';
 ?>

@@ -10,6 +10,6 @@ Swal.fire({
 }).then((result) => {
     if(!result.value){
         // Redirección a admin categorías
-        window.location = '../pages/adminCategorias.php';
+        window.location = '../../pages/adminCategorias.php';
     }
 })
