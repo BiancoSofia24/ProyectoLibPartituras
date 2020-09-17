@@ -13,7 +13,7 @@
         <h1 class="text-center">Partituras</h1>
 
         <a href="admin.php" class="btn btn-outline-dark btn-sm mb-3">
-            Ir al tablero
+            Ir al Secciones
         </a>
 
         <table class="table table-bordered table-striped table-hover">
