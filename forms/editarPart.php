@@ -3,14 +3,14 @@
     require '../functions/conexion.php';
     require '../functions/crud.php';
 
-    $ok = agregarPart();
+    $ok = editarPart();
 
 	include '../includes/head.html';
 	include '../includes/nav.php';  
 ?>
 
     <main class="container">
-        <h1 class="text-center">Nueva Partitura</h1>
+        <h1 class="text-center">Editar una Partitura</h1>
 
         <a href="../pages/adminPartituras.php" class="btn btn-outline-dark btn-sm mb-3">
             Volver a Partituras
@@ -18,11 +18,11 @@
 
         <?php
             $clase = 'error';
-            $mensaje = '¡Ups! No es posible añadir una nueva partitura.';
+            $mensaje = 'No fue posible modificar la partitura.';
 
             if ($ok) {
                 $clase = 'success';
-                $mensaje = '¡Añadiste una nueva partitura!';
+                $mensaje = '¡Has modificado la partitura!';
             }
         ?>
 

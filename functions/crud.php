@@ -109,6 +109,26 @@
         return $result;
     }
 
+    function agregarPart() {
+        $partNombre = $_POST['partNombre'];
+        $partAutor = $_POST['partAutor'];
+        $idCategoria = $_POST['idCategoria'];
+        $partArchivo = subirArchivo();
+
+        $link = conectar();
+        $sql = "INSERT INTO partituras
+                VALUES
+                (DEFAULT,
+                '".$partNombre."',
+                '".$partAutor."',
+                ".$idCategoria.",
+                '".$partArchivo."')";
+        
+        $result = mysqli_query($link, $sql)
+                or die(mysqli_error($link));
+        return $result;
+    }
+
     function subirArchivo() {
         $url = '../files/';
         $partArchivo = 'no-disponible.jpg';
@@ -128,23 +148,54 @@
         return $partArchivo;
     }
 
-    function agregarPart() {
+    function editarPart() {
+        $idPartitura = $_POST['idPartitura'];
         $partNombre = $_POST['partNombre'];
         $partAutor = $_POST['partAutor'];
-        $partNombre = $_POST['partNombre'];
+        $idCategoria = $_POST['idCategoria'];
         $partArchivo = subirArchivo();
 
         $link = conectar();
-        $sql = "INSERT INTO partituras
-                VALUES
-                (DEFAULT,
-                '".$partNombre."',
-                '".$partAutor."',
-                ".$idCategoria.",
-                '".$partArchivo."')";
+        $sql = "UPDATE partituras
+                SET partNombre = '".$partNombre."',
+                    partAutor = '".$partAutor."',
+                    idCategoria = ".$idCategoria.",
+                    partArchivo = '".$partArchivo."'
+                WHERE idPartitura = ".$idPartitura;
+
+        $result = mysqli_query($link, $sql)
+                or die(mysqli_error($link));
+        return $result;
+    }
+
+    function eliminarPart() {
+        $idPartitura = $_POST['idPartitura'];
+
+        $link = conectar();
+        $sql = "DELETE FROM partituras
+                WHERE idPartitura = ".$idPartitura;
         
         $result = mysqli_query($link, $sql)
                 or die(mysqli_error($link));
         return $result;
+    }
+
+    function partPorId() {
+        $idPartitura = $_GET['idPartitura'];
+
+        $link = conectar();
+        $sql = "SELECT  idPartitura,
+                        partNombre,
+                        partAutor,
+                        p.idCategoria, catgNombre,
+                        partArchivo
+                FROM partituras p, categorias c
+                WHERE c.idcategoria = p.idCategoria
+                AND idPartitura = ".$idPartitura;
+
+        $result = mysqli_query($link, $sql)
+                or die(mysqli_error($link));
+        $partitura = mysqli_fetch_assoc($result);
+        return $partitura;
     }
 ?>

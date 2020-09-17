@@ -20,7 +20,7 @@
             <thead class="thead-dark">
                 <tr>
                     <th>Categoría</th>
-                    <th colspan="2">
+                    <th colspan="2" class="text-center">
                         <a href="../forms/formAgregarCatg.php" class="btn btn-outline-success btn-sm">
                             <i class="fas fa-plus-circle"></i>
                             Nueva categoría
@@ -38,13 +38,13 @@
                             <?= $categoria['catgNombre']; ?>
                         </a>
                     </td>
-                    <td>
+                    <td class="text-center">
                         <a href="../forms/formEditarCatg.php?idCategoria=<?= $categoria['idCategoria']; ?>" class="btn btn-outline-primary btn-sm">
                             <i class="far fa-edit"></i>
                             Editar
                         </a>
                     </td>
-                    <td>
+                    <td class="text-center">
                     <a href="../forms/formEliminarCatg.php?idCategoria=<?= $categoria['idCategoria']; ?>" class="btn btn-outline-danger btn-sm">
                             <i class="far fa-trash-alt"></i>
                             Eliminar

@@ -23,7 +23,7 @@
                     <th>Autor</th>
                     <th>Categoría</th>
                     <th>Archivo</th>
-                    <th colspan="2">
+                    <th colspan="2" class="text-center">
                         <a href="../forms/formAgregarPart.php" class="btn btn-outline-success btn-sm">
                             <i class="fas fa-plus-circle"></i>
                             Nueva partitura
@@ -52,7 +52,7 @@
                         </a>
                     </td>
                     <td>
-                        <a href="../files/<?= $partitura['partArchivo']; ?>" class="text-dark" target="_blank">
+                        <a href="../files/<?= $partitura['partArchivo']; ?>" class="text-primary" target="_blank">
                             <?php
                                 $img = 'no-disponible.jpg';
                                 $archivo = $partitura['partArchivo'];
@@ -64,13 +64,13 @@
                         </a>
                     </td>
                     <td>
-                        <a href="#" class="btn btn-outline-primary btn-sm">
+                        <a href="../forms/formEditarPart.php?idPartitura=<?= $partitura['idPartitura']; ?>" class="btn btn-outline-primary btn-sm">
                             <i class="far fa-edit"></i>
                             Editar
                         </a>
                     </td>
                     <td>
-                    <a href="#" class="btn btn-outline-danger btn-sm">
+                    <a href="../forms/formEliminarPart.php?idPartitura=<?= $partitura['idPartitura']; ?>" class="btn btn-outline-danger btn-sm">
                             <i class="far fa-trash-alt"></i>
                             Eliminar
                         </a>
