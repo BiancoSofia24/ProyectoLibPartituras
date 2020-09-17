@@ -141,8 +141,7 @@
             $partArchivo = $_FILES['partArchivo']['name'];
             $temporal = $_FILES['partArchivo']['tmp_name'];
 
-            move_uploaded_file($temporal, $url.
-            $partArchivo);
+            move_uploaded_file($temporal, $url.$partArchivo);
         }
 
         return $partArchivo;
