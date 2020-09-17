@@ -218,7 +218,7 @@
     }
 
     function autorPorCatg() {
-        $idCategoria = $_GET['idCategoria'],
+        $idCategoria = $_GET['idCategoria'];
 
         $link = conectar();
         $sql = "SELECT  partAutor,
